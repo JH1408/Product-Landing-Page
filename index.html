@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>UBlog | Instagram Academy</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Monsieur+La+Doulaise" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+    <header id="header">
+        <nav id="nav-bar">
+          <ul class="nav">
+            <li class="img"><img src="https://i.imgur.com/eyX1g4e.png?1" alt="UBlog Logo" id="header-img"></li>
+            <li class="navbar-icon navbar-icon-toggle"><i class="fas fa-bars fa-2x"></i></li>
+            <li class="nav-link"><a href="#header">Home</a></li>
+            <li class="nav-link"><a href="#course-button">Courses</a></li>
+            <li class="nav-link"><a href="#header">FAQ</a></li>
+            <li class="nav-link"><a href="#header">About Us</a></li>
+            <li class="nav-link"><a href="#header">Blog</a></li>
+            <li class="nav-link"><a href="#form">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="intro">
+          <h1>LEARN HOW TO <span id="boost"> boost </span> YOUR INSTAGRAM</h1>
+          <p>Do you want to be a successful Instagramer? Do you want to work from anywhere?<p>
+          <button id="course-button">See Courses</button>
+        </div>
+        <div class="how">
+          <h2>How can we help?</h2>
+          <div class="container">
+            <div id="Course">
+              <i class="fas fa-desktop"></i>
+              <h3 class="item">Online Courses</h3>
+              <p class="info">PDFs and videos that will teach you everything that you need to know step by step.</p>
+            </div>
+            <div id="Consult">
+              <i class="fas fa-microphone"></i>
+              <h3 class="item">Consulting</h3>
+              <p class="info">Individual one on one coachings.</p>
+            </div>
+            <div id="Facebook">
+              <i class="fab fa-facebook-f"></i>
+              <h3 class="item">Facebook Community</h3>
+              <p class="info">Closed online group to interact, connect and collaborate.</p>
+            </div>
+          </div>
+        <div class="contact">
+          <h3 class="intouch">Want to get in touch with us?</h3>
+          <form id="form" class="contact-form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <table>
+              <tr>
+                <td id="tlabel">
+                  <label for="Name" id="name-label">* Name:</label>
+                </td>
+                <td id="tanswer">
+                  <input type="text" id="name" placeholder="Enter your name" required>
+                </td>
+              </tr>
+              <tr>
+                <td id="tlabel">
+                  <label for="email" id="email-label">* Email:</label>
+                </td>
+                <td id="tanswer">
+                  <input type="email" id="email" placeholder="Enter your Email" required>
+                </td>
+              </tr>
+              <tr>
+                <td id="tlabel">
+                  <label for="message">* Message:</label>
+                </td>
+                <td>
+                  <textarea name="message" id="tanswer" rows="4"  placeholder="Enter your message" required></textarea>
+                </td>
+              </tr>
+            </table>
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+      </header>
+    <footer>
+      <h4 class="foot">Created by Josy. H 2019</h4>
+    </footer>
+    <script type="text/javascript">
+      function classToggle() {
+        const navs = document.querySelectorAll('.nav-link')
+        navs.forEach(nav => nav.classList.toggle('navbar__ToggleShow'));
+        }
+
+        document.querySelector('.navbar-icon-toggle')
+        .addEventListener('click', classToggle);
+    </script>
+  </body>
+</html>

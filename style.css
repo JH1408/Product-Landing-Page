@@ -1,0 +1,435 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+body, html {
+  width: 100%;
+  font-size: 12px;
+}
+
+#nav-bar {
+  margin-right: 10%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  padding-bottom: 40px;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+img {
+  max-width: 150px;
+}
+
+.img {
+  padding-right: 10%;
+}
+
+.nav-link {
+  font-size: 2rem;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 18px;
+  margin-bottom: -25px;
+}
+
+li {
+  list-style: none;
+  height: 15px;
+}
+
+a:hover {
+  color: rgb(69,154,211);
+}
+
+a {
+  text-decoration: none;
+  color: #344b51;
+}
+
+.navbar-icon-toggle {
+  display: none;
+}
+
+.intro {
+  background-image: url(https://i.imgur.com/UvZggNk.jpg);
+  background-size: cover;
+  background-color: #7887a0;
+  background-blend-mode: multiply;
+  height: 900px;
+  }
+
+#boost {
+  font-family: 'Vladimir Script', cursive;
+  font-weight: lighter;
+  font-size: 100px;
+  color: rgb(69,154,211);
+}
+
+h1 {
+  color: white;
+  font-size: 8rem;
+  padding-top: 140px;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  left: 15%;
+  width: 70%;
+}
+
+button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(69,154,211);
+  border-radius: 5px;
+  height: 55px;
+  width: 220px;
+  border-style: none;
+  position: relative;
+  top: 20%;
+  z-index: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #16659e;
+}
+
+.how {
+  text-align: center;
+  color: #344b51;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.container {
+   display: flex;
+   padding-top: 2%;
+}
+
+.container > div {
+  flex:1;
+}
+
+.fa-desktop, .fa-microphone, .fa-facebook-f {
+  font-size: 70px;
+}
+
+.info {
+  color: #344b51;
+  font-size: 80%;
+}
+
+.item {
+  font-size: 90%;
+  margin-bottom: -4%;
+}
+
+.contact {
+  background-color: #dae3f2;
+  color: #344b51;
+}
+
+.intouch {
+  font-size: 140%;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.contact-form {
+  padding-bottom: 2%;
+  width: auto;
+}
+
+table {
+  margin: auto;
+  width: auto;
+}
+
+input {
+  border-radius: 4px;
+  border-style: none;
+  width: 250px;
+  height: 20px;
+}
+
+td {
+  padding-right: 20px;
+  width: auto;
+  vertical-align: top;
+  padding-bottom: 20px;
+  font-size: 80%;
+}
+
+#tlabel {
+  text-align: right;
+}
+
+#tanswer {
+  text-align: left;
+  border-radius: 4px;
+  border-style: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  width: 250px;
+  font-weight: lighter;
+}
+
+#submit {
+  width: 80px;
+  height: 30px;
+  font-size: 70%;
+  position: relative;
+  right: 40px;
+}
+
+h4 {
+  color: #344b51;
+  text-align: center;
+  font-size: 70%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/*small laptops*/
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  html {
+    font-size: 8px;
+  }
+
+  h1 {
+  max-width: 1090px;
+  }
+
+  p {
+    padding-bottom: 90px;
+  }
+
+  .nav-link {
+    padding-right: 30px;
+    padding-left: 10px;
+  }
+
+}
+
+/*tablets*/
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+
+  .intro {
+    height: 800px;
+  }
+
+  h1 {
+  padding-right: 5px;
+  padding-left: 5px;
+  }
+
+  p {
+    padding-bottom: 70px;
+  }
+
+  header {
+    height: 20px;
+  }
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    display:none;
+  }
+
+  .navbar-icon-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    right: 30px;
+    top: 20px;
+  }
+
+  .navbar__ToggleShow {
+    display: flex;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 5px;
+    }
+
+    li {
+      height: 1px;
+    }
+
+    img {
+      max-width: 100px;
+    }
+
+  button {
+    font-size: 22px;
+    height: 50px;
+    width: 200px;
+    }
+
+  h2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .fa-desktop, .fa-microphone, .fa-facebook-f {
+    font-size: 60px;
+  }
+
+  .item {
+    font-size: 70%;
+  }
+
+  .info {
+    font-size: 60%;
+  }
+
+  .intouch {
+    font-size: 22px;
+    padding-top: 20px;
+  }
+  td {
+    font-size: 65%;
+  }
+
+  #tanswer {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 11px;
+  }
+
+  #submit {
+    width: 70px;
+    height: 25px;
+    font-size: 60%;
+    right: 55px;
+  }
+}
+
+/*phones*/
+
+@media only screen and (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    display:none;
+  }
+
+  .navbar-icon-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    right: 30px;
+    top: 20px;
+  }
+
+  .navbar__ToggleShow {
+    display: flex;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 5px;
+  }
+
+  li {
+    height: 1px;
+  }
+
+  html {
+    font-size: 5px;
+  }
+
+  img {
+    max-width: 100px;
+  }
+
+  .intro {
+    height: 700px;
+  }
+
+  p {
+    padding-bottom: 60px;
+  }
+
+  button {
+    font-size: 17px;
+    height: 40px;
+    width: 180px;
+    top: -15px;
+    }
+
+  .container {
+    flex-direction: column;
+    padding-right: 25px;
+    padding-left: 25px;
+    }
+
+    h2 {
+     font-size: 20px;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     }
+
+   .fa-desktop, .fa-microphone, .fa-facebook-f {
+       font-size: 50px;
+     }
+
+   .item {
+       font-size: 70%;
+       padding-bottom: 15px;
+     }
+
+   .info {
+       font-size: 60%;
+       margin-bottom: -15px;
+     }
+
+   .intouch {
+       font-size: 20px;
+       padding-top: 20px;
+     }
+
+  td {
+      font-size: 55%;
+    }
+
+  #tanswer {
+      font-size: 11px;
+    }
+
+  input {
+      font-size: 10px;
+    }
+
+  #submit {
+      width: 65px;
+      height: 22px;
+      font-size: 57%;
+      right: 55px;
+    }
+}
