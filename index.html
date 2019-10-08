@@ -14,7 +14,7 @@
     <header id="header">
         <nav id="nav-bar">
           <ul class="nav">
-            <li class="img"><img src="https://i.imgur.com/eyX1g4e.png?1" alt="UBlog Logo" id="header-img"></li>
+            <li class="img"><a href="#header"><img src="https://i.imgur.com/eyX1g4e.png?1" alt="UBlog Logo" id="header-img"></a></li>
             <li class="navbar-icon navbar-icon-toggle"><i class="fas fa-bars fa-2x"></i></li>
             <li class="nav-link"><a href="#header">Home</a></li>
             <li class="nav-link"><a href="#course-button">Courses</a></li>
@@ -24,11 +24,15 @@
             <li class="nav-link"><a href="#form">Contact</a></li>
           </ul>
         </nav>
-        <div class="intro">
-          <h1>LEARN HOW TO <span id="boost"> boost </span> YOUR INSTAGRAM</h1>
-          <p>Do you want to be a successful Instagramer? Do you want to work from anywhere?<p>
-          <button id="course-button">See Courses</button>
+        <div class="hero">
+          <div class="intro">
+            <h1>LEARN HOW TO <span id="boost"> boost </span> YOUR INSTAGRAM</h1>
+            <p>Do you want to be a successful Instagramer? Do you want to work from anywhere?<p>
+            <button id="course-button">See Courses</button>
+          </div>
         </div>
+      </header>
+      <section>
         <div class="how">
           <h2>How can we help?</h2>
           <div class="container">
@@ -80,14 +84,14 @@
             <button type="submit" id="submit">Submit</button>
           </form>
         </div>
-      </header>
+      </section>
     <footer>
       <h4 class="foot">Created by Josy. H 2019</h4>
     </footer>
     <script type="text/javascript">
       function classToggle() {
         const navs = document.querySelectorAll('.nav-link')
-        navs.forEach(nav => nav.classList.toggle('navbar__ToggleShow'));
+        navs.forEach(nav => nav.classList.toggle('show'));
         }
 
         document.querySelector('.navbar-icon-toggle')
