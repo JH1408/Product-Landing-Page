@@ -63,7 +63,7 @@ a {
 }
 
 .hero {
-  background-image: url(https://i.imgur.com/UvZggNk.jpg);
+  background-image: url('img/background.jpg');
   background-size: cover;
   background-color: #7887a0;
   background-blend-mode: multiply;
